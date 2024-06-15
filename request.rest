@@ -1,0 +1,31 @@
+### Create a note
+POST http://localhost:3000/notes/create
+Content-Type: application/json
+
+{
+    "title": "Pengembangan Fitur",
+    "datetime": "2024-06-15T15:30:00+07:00",
+    "note": "Minggu 3: Buat model database untuk Produk dan Kategori. Implementasi CRUD untuk Produk. Testing endpoint dengan Postman."
+}
+
+### Get notes
+GET http://localhost:3000/notes
+Content-Type: application/json
+
+### Update notes
+PUT http://localhost:3000/notes/1
+Content-Type: application/json
+
+{
+    "title": "Pengembangan Fitur Mindes App",
+    "datetime": "2024-06-15T15:30:00+07:00",
+    "note": "Deadline: 16 Juni 2024. Minggu 3: Buat model database untuk Produk dan Kategori. Implementasi CRUD untuk Produk. Testing endpoint dengan Postman. Minggu 4: Buat model database untuk Stok dan Pengguna. Implementasi otentikasi pengguna Integrasi frontend dengan backend."
+}
+
+### Get notes by ID
+GET http://localhost:3000/notes/1
+Content-Type: application/json
+
+### LAST Delete notes by ID
+DELETE http://localhost:3000/notes/1
+Content-Type: application/json
